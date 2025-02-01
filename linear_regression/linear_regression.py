@@ -138,12 +138,4 @@ class LinearRegression:
         return 1 - (explained_variance / total_variance)
 
 
-X = np.random.randn(100, 10)
-y = np.random.randn(100)
-linear_regression = LinearRegression(verbose=True)
-linear_regression.fit(X, y)
-y_pred = linear_regression.predict(X)
-score = linear_regression.score(X, y)
-# print(f"Predicted target values: {y_pred}")
-print(f"R-squared score: {score}")
 
